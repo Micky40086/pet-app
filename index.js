@@ -28,15 +28,11 @@ export default class Demo extends Component {
         <TabBarIOS.Item title="首頁" icon={require("./src/images/icons/tab1.png")}
         selected={this.state.tab === 'Page1'}
         onPress={() => this.setState({ tab: 'Page1' })}>
-          <View>
-            <View>
-              <Title name="4 PET"/>
-            </View>
-            <View style={{display: 'flex', flexDirection: 'column'}}>
-              <IndexField1/>
-              <IndexField2/>
-              <IndexField3 style={{alignSelf: 'stretch'}}/>
-            </View>
+          <View style={styles.content}>
+            <Title name="4 PET"/>
+            <IndexField1/>
+            <IndexField2/>
+            <IndexField3/>
           </View>
         </TabBarIOS.Item>
         <TabBarIOS.Item title="配對" icon={require("./src/images/icons/tab2.png")}
@@ -67,6 +63,10 @@ export default class Demo extends Component {
 
 
 const styles = StyleSheet.create({
+  content: {
+    flex:1, 
+    marginBottom: 48, // iphone6 tab height 48
+  },
   indexContainer: {
     flex: 1,
   },

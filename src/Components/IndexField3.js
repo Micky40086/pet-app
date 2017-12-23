@@ -33,6 +33,7 @@ export default class IndexField3 extends Component<{}> {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: 'rgb(172,81,188)',
   },
   title: {

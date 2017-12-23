@@ -12,7 +12,7 @@ export default class Title extends Component<{}> {
   }
   render() {
     return (
-      <View>
+      <View style={styles.container} >
         <View style={styles.top_bg}/>
         <View style={styles.title}>
           <Text style={styles.title_font}>{this.props.name}</Text>
@@ -24,6 +24,9 @@ export default class Title extends Component<{}> {
 
 
 const styles = StyleSheet.create({
+  container: {
+    height: 60,
+  },
   top_bg: {
     height: 10,
     backgroundColor: 'rgb(249,146,23)',
