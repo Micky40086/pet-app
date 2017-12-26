@@ -5,6 +5,8 @@ import Title from './src/Components/Title';
 import IndexField1 from './src/Components/IndexField1'
 import IndexField2 from './src/Components/IndexField2'
 import IndexField3 from './src/Components/IndexField3'
+import Random from './src/Components/Random'
+
 import {
   AppRegistry,
   StyleSheet,
@@ -45,8 +47,9 @@ export default class Demo extends Component {
         <TabBarIOS.Item title="隨機" icon={require("./src/images/icons/tab3.png")}
         selected={this.state.tab === 'Page3'}
         onPress={() => this.setState({ tab: 'Page3' })}>
-          <View>
+          <View style={styles.content}>
             <Title name="隨機"/>
+            <Random/>
           </View>
         </TabBarIOS.Item>
         <TabBarIOS.Item title="寵物蛋" icon={require("./src/images/icons/tab4.png")}
