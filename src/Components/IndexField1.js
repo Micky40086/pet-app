@@ -17,7 +17,7 @@ export default class IndexField1 extends Component<{}> {
       <View style={styles.container}>
         <Text style={styles.title}>測驗你的寵物相似指數</Text>
         <View style={styles.image}>
-          <Image source={require('../images/fox.png')}/>
+          <Image source={require('../images/fox.png')} />
         </View>
         <TouchableHighlight onPress={this._onPressButton} style={styles.button}>
           <View>
@@ -42,9 +42,9 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   image: {
-    flexDirection: 'row', 
-    alignItems:"flex-end",
-    marginLeft: 20,
+    position: 'absolute',
+    left: 20,
+    bottom: 20,
   },
   content: {
     position: 'absolute',

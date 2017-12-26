@@ -42,7 +42,9 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
   image: {
-    marginLeft: 65,
+    position: 'absolute',
+    left: 75,
+    bottom: 30,
   },
   content: {
     position: 'absolute',
